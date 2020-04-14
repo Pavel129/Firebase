@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>764448049501-63qg70vksm4na8b5g0ga8tb2dfk6lvir.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.764448049501-63qg70vksm4na8b5g0ga8tb2dfk6lvir</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCdQu9nsEBie20VgWiFFY30h5Etew6d4NU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>764448049501</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Pavel-Chekov.Firebase</string>
+	<key>PROJECT_ID</key>
+	<string>pavel-chekov-firebase</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pavel-chekov-firebase.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:764448049501:ios:c0d4c19e502c0df1d680b4</string>
+	<key>DATABASE_URL</key>
+	<string>https://pavel-chekov-firebase.firebaseio.com</string>
+</dict>
+</plist>

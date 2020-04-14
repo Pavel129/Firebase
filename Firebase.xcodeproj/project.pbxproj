@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		3D6527752444F527003D2BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6527732444F527003D2BD8 /* Main.storyboard */; };
 		3D6527772444F529003D2BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6527762444F529003D2BD8 /* Assets.xcassets */; };
 		3D65277A2444F529003D2BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6527782444F529003D2BD8 /* LaunchScreen.storyboard */; };
+		3D8CBDAE244502A300A69AB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D8CBDAD244502A300A69AB3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3D6527762444F529003D2BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D6527792444F529003D2BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D65277B2444F529003D2BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D8CBDAD244502A300A69AB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				28F10EE6F424B8AA59DAC185 /* Pods-Firebase.debug.xcconfig */,
 				2D078218ACF3ABD9CEB88827 /* Pods-Firebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +80,7 @@
 				3D6527732444F527003D2BD8 /* Main.storyboard */,
 				3D6527762444F529003D2BD8 /* Assets.xcassets */,
 				3D6527782444F529003D2BD8 /* LaunchScreen.storyboard */,
+				3D8CBDAD244502A300A69AB3 /* GoogleService-Info.plist */,
 				3D65277B2444F529003D2BD8 /* Info.plist */,
 			);
 			path = Firebase;
@@ -153,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D65277A2444F529003D2BD8 /* LaunchScreen.storyboard in Resources */,
+				3D8CBDAE244502A300A69AB3 /* GoogleService-Info.plist in Resources */,
 				3D6527772444F529003D2BD8 /* Assets.xcassets in Resources */,
 				3D6527752444F527003D2BD8 /* Main.storyboard in Resources */,
 			);
