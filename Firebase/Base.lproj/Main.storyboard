@@ -28,7 +28,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-vt-JQu">
                                         <rect key="frame" x="25" y="51" width="364" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wl-U1-3p5">
                                         <rect key="frame" x="25" y="110" width="364" height="26"/>
@@ -39,7 +39,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRL-u8-ip8">
                                         <rect key="frame" x="25" y="161" width="364" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -92,28 +92,37 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="82.366071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Two-->
         <scene sceneID="OQQ-Wp-AFk">
             <objects>
-                <viewController id="THf-pZ-bXN" sceneMemberID="viewController">
+                <viewController id="THf-pZ-bXN" customClass="ViewControllerTwo" customModule="Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TNZ-wQ-Hao">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ура!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxh-W7-pkD">
-                                <rect key="frame" x="90" y="455.5" width="254" height="39.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="254" id="Tcy-PQ-YjZ"/>
-                                </constraints>
+                                <rect key="frame" x="166.5" y="428.5" width="81.5" height="39.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0C-Dg-YcU">
+                                <rect key="frame" x="163.5" y="583" width="87" height="48"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <state key="normal" title="Выход"/>
+                                <connections>
+                                    <action selector="outAction:" destination="THf-pZ-bXN" eventType="touchUpInside" id="ELR-6G-z6E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="vxh-W7-pkD" firstAttribute="centerY" secondItem="GY5-1e-HIN" secondAttribute="centerY" id="c0v-DR-lJm"/>
-                            <constraint firstItem="vxh-W7-pkD" firstAttribute="centerX" secondItem="GY5-1e-HIN" secondAttribute="centerX" constant="10" id="e9t-Ue-jEa"/>
+                            <constraint firstItem="vxh-W7-pkD" firstAttribute="centerY" secondItem="TNZ-wQ-Hao" secondAttribute="centerY" id="LQT-Ry-ugL"/>
+                            <constraint firstItem="b0C-Dg-YcU" firstAttribute="centerX" secondItem="TNZ-wQ-Hao" secondAttribute="centerX" id="Q6i-oo-peG"/>
+                            <constraint firstItem="b0C-Dg-YcU" firstAttribute="centerX" secondItem="GY5-1e-HIN" secondAttribute="centerX" id="p1G-nm-CdM"/>
+                            <constraint firstItem="GY5-1e-HIN" firstAttribute="bottom" secondItem="b0C-Dg-YcU" secondAttribute="bottom" priority="750" constant="231" id="pUg-0w-gXG"/>
+                            <constraint firstItem="vxh-W7-pkD" firstAttribute="centerX" secondItem="TNZ-wQ-Hao" secondAttribute="centerX" id="rfP-1f-tI9"/>
+                            <constraint firstItem="b0C-Dg-YcU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vxh-W7-pkD" secondAttribute="bottom" constant="45" id="zhZ-Up-XaA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GY5-1e-HIN"/>
                     </view>
